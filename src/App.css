@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: #f1f3f5;
+}
+
+.container-aplicacao {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 20px;
+  background-color: #f1f3f5;
+}
+
+.conteudo-principal {
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo-aplicacao {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #212529;
+  margin-bottom: 24px;
+}
+
+.formulario-tarefa {
+  width: 100%;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.campo-entrada {
+  flex: 1;
+  padding: 12px 16px;
+  font-size: 0.95rem;
+  color: #000000; 
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  background-color: #ffffff;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+  transition: border-color 0.2s;
+}
+
+.campo-entrada:focus {
+  border-color: #2ecc71;
+}
+
+.botao-adicionar {
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: background-color 0.2s;
+}
+
+.botao-adicionar:hover {
+  background-color: #27ae60;
+}
+
+.barra-filtros {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 0 4px;
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+.grupo-filtros {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.botao-filtro {
+  background: none;
+  border: none;
+  color: #6c757d;
+  font-size: 0.875rem;
+  cursor: pointer;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.botao-filtro.ativo {
+  font-weight: 700;
+  color: #343a40;
+}
+
+.contador-tarefas {
+  color: #6c757d;
+}
+
+.lista-tarefas {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cartao-tarefa {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+.conteudo-tarefa {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+}
+
+.caixa-selecao {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #adb5bd;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #ffffff;
+  flex-shrink: 0;
+}
+
+.caixa-selecao.marcada {
+  background-color: #000000;
+  border-color: #000000;
+}
+
+.texto-tarefa {
+  font-size: 1rem;
+  color: #343a40;
+  cursor: pointer;
+  user-select: none;
+}
+
+.texto-tarefa.concluido {
+  text-decoration: line-through;
+  color: #adb5bd;
+}
+
+.entrada-edicao {
+  flex: 1;
+  padding: 6px 10px;
+  font-size: 0.95rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  outline: none;
+}
+
+.acoes-tarefa {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: 12px;
+}
+
+.botao-icone {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #495057;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  transition: color 0.2s;
+}
+
+.botao-icone:hover {
+  color: #000000;
+}
